@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
     <title>My first portfolio</title>
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
@@ -18,42 +20,80 @@
     </header>
     <main>
         <section id="#aboutme">
-            <article>
-                <h2>About Me</h2>
-                <!--<content>-->
+            <div class="about-me-container">
+                <article>
+                    <h2>About Me</h2>
+                    <!--<content>-->
                     <p>Hi! I am Garin, Mechatronic Engineer and Researcher focused on electronic engineer who has developed different tools to measure electrical properties on molecular materials.</p>
                     <p>I am one of the rare cases in which a mechatronic tries to enroll to research field instead of the industry.</p>
                     <p>In my free time I like to read and learn about scientific developments, engineering, videogames,  mechatronic, web develping and cooking.</p>
-                <!--</content>-->                
-            </article>
-            <aside>
-                <img src="./resources/images/2019-08-15 11.50.32B.jpg" alt="picture of garin escorcia ariza">
-            </aside>
+                    <p>A interesting data, I am <span id="time-container">0</span> seconds of live.</p>
+                    <!--</content>-->                
+                </article>
+                <img src="./resources/images/2019-08-15 11.50.32B.jpg" alt="picture of garin escorcia ariza" class="portrait">
+            </div>            
         </section>
-        <section id="#publications">
-            <h2>Publications</h2>            
-            <ul>
-                <li><a href="https://pubs.acs.org/doi/10.1021/jacs.0c07531" target="_blank">Reinforced Room-Temperature Spin Filtering in Chiral Paramagnetic Metallopeptides</a></li>
-                <li><a href="https://pubs.acs.org/doi/10.1021/acs.chemmater.9b01634" target="_blank">Ultrathin Films of 2D Hofmann-Type Coordination Polymers: Influence of Pillaring Linkers on Structural Flexibility and Vertical Charge Transport</a></li>
-                <li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.201808242" target="_blank">Origin of the Chemiresistive Response of Ultrathin Films of Conductive Metal–Organic Frameworks</a></li>
-                <li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adma.201704291" target="_blank">Bottom‐Up Fabrication of Semiconductive Metal–Organic Framework Ultrathin Films</a></li>
-                <!--- <li><a href="" target="_blank"></a></li> --->
-            </ul>
-        </section>section>
+        <section id="#publications">            
+            <h2>Publications</h2>
+            <details>
+                <summary class="project-title"><h3>Reinforced Room-Temperature Spin Filtering in Chiral Paramagnetic Metallopeptides</h3></summary>
+                <img src="./resources/images/ja0c07531_0005.gif" alt="sketch about how works effect CISS" class="proyect-image">
+                <p class="proyect-description">
+                    Chirality-induced spin selectivity (CISS), whereby helical molecules polarize the spin of electrical current, is an intriguing effect with potential applications in nanospintronics. In this nascent field, the study of the CISS effect using paramagnetic chiral molecules, which could introduce another degree of freedom in controlling the spin transport, remains so far unexplored. To address this challenge, herein we propose the use of self-assembled monolayers (SAMs) of helical lanthanide-binding peptides. To elucidate the effect of the paramagnetic nuclei, monolayers of the peptide coordinating paramagnetic or diamagnetic ions are prepared. By means of spin-dependent electrochemistry, the CISS effect is demonstrated by cyclic voltammetry and electrochemical impedance measurements for both samples. Additionally, an implementation of the standard liquid-metal drop electron transport setup has been carried out, and this process helped to demonstrate the peptides’ suitability for solid-state devices. Remarkably, the inclusion of a paramagnetic center in the peptide increases the spin polarization as was independently proved by different techniques. These findings permit the inclusion of magnetic biomolecules in the CISS field and pave the way to their implementation in a new generation of (bio)spintronic nanodevices. 
+                </p>
+                <button>
+                    <a href="https://pubs.acs.org/doi/10.1021/jacs.0c07531" target="_blank">More...</a>
+                </button>                
+            </details>
+            <details>
+                <summary class="proyect-title">
+                    <h3>Ultrathin Films of 2D Hofmann-Type Coordination Polymers: Influence of Pillaring Linkers on Structural Flexibility and Vertical Charge Transport</h3>
+                </summary>
+                <img src="./resources/images/cm9b01634_0009.gif" alt="Hofmann-Type sketch" class="proyect-image">
+                <p class="proyect-description">
+                    Searching for novel materials and controlling their nanostructuration into electronic devices is a challenging task ahead of chemists and chemical engineers. Even more so when this new application requires an exquisite control over the morphology, crystallinity, roughness, and orientation of the films produced. In this context, it is of critical importance to analyze the influence of the chemical composition of perspective materials on their properties at the nanoscale. We report the fabrication of ultrathin films (thickness < 30 nm) of a family of FeII Hofmann-like coordination polymers (CPs) by using an optimized liquid-phase epitaxy (LPE) set up. The series [Fe(L)2{Pt(CN)4}] (L = pyridine, pyrimidine, and isoquinoline) conform an ideal platform for correlating the effect of the axial nitrogenated ligand with changes to their structural response to guests or electrical resistance. All film properties relevant to device integration have been thoroughly analyzed with complementary surface techniques for a meaningful comparison. Our results reveal that changes to this ligand can hinder the structural transformation triggered by the absorption of guest molecules previously reported for the pyridine phase. Also important, it can substantially hinder vertical charge transport across the layers, even at the ultrathin film limit.
+                </p>
+                <button>
+                    <a href="https://pubs.acs.org/doi/10.1021/acs.chemmater.9b01634" target="_blank">More ...</a>
+                </button>
+            </details>
+            <details>
+                <summary class="proyect-title">
+                    <h3>Origin of the Chemiresistive Response of Ultrathin Films of Conductive Metal–Organic Frameworks</h3>
+                </summary>                
+                <p class="proyect-description">
+                    Conductive metal–organic frameworks are opening new perspectives for the use of these porous materials for applications traditionally limited to more classical inorganic materials, such as their integration into electronic devices. This has enabled the development of chemiresistive sensors capable of transducing the presence of specific guests into an electrical response with good selectivity and sensitivity. By combining experimental data with computational modelling, a possible origin for the underlying mechanism of this phenomenon in ultrathin films (ca. 30 nm) of Cu‐CAT‐1 is described.
+                </p>
+                <button>
+                    <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.201808242" target="_blank">More...</a>
+                </button>
+            </details> 
+            <details>
+                <summary class="proyect-title">
+                    <h3>Bottom‐Up Fabrication of Semiconductive Metal–Organic Framework Ultrathin Films</h3>
+                </summary>                
+                <p class="proyect-description">
+                    Though generally considered insulating, recent progress on the discovery of conductive porous metal–organic frameworks (MOFs) offers new opportunities for their integration as electroactive components in electronic devices. Compared to classical semiconductors, these metal–organic hybrids combine the crystallinity of inorganic materials with easier chemical functionalization and processability. Still, future development depends on the ability to produce high‐quality films with fine control over their orientation, crystallinity, homogeneity, and thickness. Here self‐assembled monolayer substrate modification and bottom‐up techniques are used to produce preferentially oriented, ultrathin, conductive films of Cu‐CAT‐1. The approach permits to fabricate and study the electrical response of MOF‐based devices incorporating the thinnest MOF film reported thus far (10 nm thick).
+                </p>
+                <button>
+                    <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adma.201704291" target="_blank">More...</a>
+                </button>
+            </details>           
+        </section>
         <section id="#skills">
             <h2>Skills</h2>
-            <ul id="skills-container">
-                <li class="fab fa-js" role="icon javascript"></li>
-                <li class="fab fa-html5" role="icon html"></li>
-                <li class="fab fa-css3-alt" role="icon css"></li>
-                <li class="fab fa-git" role="icon git"></li>
-                <li class="fab fa-node" role="icon node"></li>
-                <li class="fab fa-github" role="icon github"></li>   
-            </ul>
+            <div id="skills-container">
+                <i class="fab fa-js" role="icon javascript"></i>
+                <i class="fab fa-html5" role="icon html"></i>
+                <i class="fab fa-css3-alt" role="icon css"></i>
+                <i class="fab fa-git" role="icon git"></i>
+                <i class="fab fa-node" role="icon node"></i>
+                <i class="fab fa-github" role="icon github"></i>   
+            </div>
         </section>        
     </main>
     <footer>
         <p>Made for you</p>
     </footer>
-
+    <script src="./resources/js/script.js"></script>
 </body>
